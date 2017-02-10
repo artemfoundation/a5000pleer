@@ -2,7 +2,7 @@
 
 npm install
 
-#Start with webpack-dev-server
+#Start with static-server
 
 npm run start
 
