@@ -1,6 +1,7 @@
 #Get started(with node v4)
 
-npm install
+1. clone project
+2. npm install
 
 #Start with static-server
 
