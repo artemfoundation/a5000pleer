@@ -1,0 +1,21 @@
+.full-screen-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    .wrapper {
+        width: 960px;
+        background: #fff;
+        margin: 0 auto;
+        .sub-wrapper {
+            margin-top: 30px;
+        }
+    }
+    @media only screen and (max-width: 960px) {
+        .wrapper {
+            width: 100%;
+        }
+    }
+}

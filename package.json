@@ -1,0 +1,60 @@
+{
+    "name": "a5000pleer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server.js",
+        "build": "./node_modules/.bin/webpack",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "6to5-core": "^3.6.5",
+        "6to5-loader": "^3.0.0",
+        "autoprefixer": "^6.7.2",
+        "babel-core": "^6.22.1",
+        "babel-loader": "^6.2.10",
+        "babel-preset-es2015": "^6.22.0",
+        "babel-preset-es2017": "^6.22.0",
+        "babel-preset-react": "^6.22.0",
+        "babel-preset-stage-2": "^6.22.0",
+        "body-parser": "^1.16.0",
+        "clean-webpack-plugin": "^0.1.15",
+        "css-loader": "^0.26.1",
+        "express": "^4.14.1",
+        "extract-text-webpack-plugin": "^2.0.0-beta",
+        "file-loader": "^0.10.0",
+        "history": "^4.5.1",
+        "html-webpack-plugin": "^2.28.0",
+        "postcss-cssnext": "^2.9.0",
+        "postcss-import": "^9.1.0",
+        "postcss-loader": "^1.2.2",
+        "postcss-nested": "^1.0.0",
+        "react-hot-loader": "^1.3.1",
+        "redux-logger": "^2.8.1",
+        "style-loader": "^0.13.1",
+        "url-loader": "^0.5.7",
+        "webpack": "^2.2.1",
+        "webpack-dev-middleware": "^1.10.0",
+        "webpack-dev-server": "^2.3.0",
+        "webpack-hot-middleware": "^2.16.1",
+        "webpack-merge": "^2.6.1"
+    },
+    "browser": {
+        "canvas": false,
+        "fs": false,
+        "jsdom": false,
+        "xmldom": false
+    },
+    "dependencies": {
+        "lodash": "^4.17.4",
+        "react": "^15.4.2",
+        "react-dom": "^15.4.2",
+        "react-redux": "^5.0.2",
+        "redux": "^3.6.0",
+        "redux-thunk": "^2.2.0"
+    }
+}
