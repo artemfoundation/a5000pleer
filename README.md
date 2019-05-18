@@ -1,12 +1,15 @@
-#Get started(with node v4)
+# Demo
+https://artem-cats-pleer.herokuapp.com
+
+## Get started(with node v4)
 
 1. clone project
 2. npm install
 
-#Start with static-server
+## Start with static-server
 
 npm run start
 
-#Build production version
+## Build production version
 
 npm run build
