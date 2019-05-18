@@ -1,23 +1,27 @@
-var webpack = require('webpack');
 var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
 
-var webpackDevMiddleware = require('webpack-dev-middleware');
-var webpackHotMiddleware = require('webpack-hot-middleware');
-var config = require('./webpack.config');
-
 var app = new require('express')();
 var port = process.env.PORT || 9000;
 
-var static_path = path.join(__dirname, '');
+if(process.env.NODE_ENV === 'development') {
+    (() => {
+        var webpack = require('webpack');
+        var webpackDevMiddleware = require('webpack-dev-middleware');
+        var webpackHotMiddleware = require('webpack-hot-middleware');
+        var config = require('./webpack.config');
 
-var compiler = webpack(config);
-app.use(webpackDevMiddleware(compiler, {
-    noInfo: true,
-    publicPath: config.output.publicPath
-}));
-app.use(webpackHotMiddleware(compiler));
+        var compiler = webpack(config);
+        app.use(webpackDevMiddleware(compiler, {
+            noInfo: true,
+            publicPath: config.output.publicPath
+        }));
+        app.use(webpackHotMiddleware(compiler));
+    })()
+}
+
+var static_path = path.join(__dirname, '');
 app.use(bodyParser.json());
 
 app.use(express.static(static_path))
