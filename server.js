@@ -8,7 +8,7 @@ var webpackHotMiddleware = require('webpack-hot-middleware');
 var config = require('./webpack.config');
 
 var app = new require('express')();
-var port = 9000;
+var port = process.env.PORT || 9000;
 
 var static_path = path.join(__dirname, '');
 
